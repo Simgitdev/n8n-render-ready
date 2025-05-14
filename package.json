@@ -7,6 +7,6 @@
     "start": "node --max-old-space-size=1024 ./dist/index.js"
   },
   "dependencies": {
-    "n8n": "^0.230.0", "@azure/msal-node": "^2.x.x"
+    "n8n": "^0.230.0"
   }
 }
