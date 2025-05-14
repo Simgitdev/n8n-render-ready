@@ -4,7 +4,7 @@
   "description": "Minimal n8n setup for Render",
   "main": "index.js",
   "scripts": {
-    "start": "node --max-old-space-size=1024 ./dist/index.js"
+    "start": "n8n start"
   },
   "dependencies": {
     "n8n": "^0.230.0"
