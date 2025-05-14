@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: n8n-render-ready
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: "20.15.1"
+      - key: WEBHOOK_TUNNEL_URL
+        value: "https://n8ninmay.onrender.com/"
+      - key: N8N_HOST
+        value: "n8ninmay.onrender.com"
+      - key: N8N_PORT
+        value: "80"
+      - key: N8N_PROTOCOL
+        value: "https"
+      - key: EXECUTIONS_MODE
+        value: "regular"
+      - key: N8N_BASIC_AUTH_ACTIVE
+        value: "false"
